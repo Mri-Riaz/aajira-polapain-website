@@ -1,4 +1,4 @@
-const ADMIN_PASS = "polapain123"; // এটা চেঞ্জ করো
+const ADMIN_PASS = "polapain323"; // এটা চেঞ্জ করো
 
 function login() {
   if (document.getElementById("adminPass").value === ADMIN_PASS) {
