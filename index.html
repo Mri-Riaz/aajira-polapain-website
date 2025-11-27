@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>আজাইরা পোলাপাইন - অফিসিয়াল ওয়েবসাইট</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kalpurush&family=Hind+Siliguri:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.png" alt="লোগো" width="60">
+        <h1>আজাইরা পোলাপাইন</h1>
+      </div>
+      <a href="https://www.facebook.com/ajairapolapain" target="_blank" class="follow-btn">
+        <i class="fab fa-facebook"></i> ফেসবুকে ফলো করুন
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <img src="images/banner.jpg" alt="ব্যানার">
+    <div class="banner-text">
+      <h2>এখানে শুধু আজাইরা পোলাপাইনদেরই প্রবেশাধিকার আছে 😜</h2>
+      <p>আমাদের পরিবারে এখন <span id="memberCount">০</span> জন পোলাপাইন আছে 🚀</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="section"><h2>অ্যাডমিন টিম</h2><div class="grid" id="adminList"></div></section>
+    <section class="section"><h2>মনিটর টিম</h2><div class="grid" id="monitorList"></div></section>
+    <section class="section"><h2>সদস্য তালিকা</h2><div class="grid" id="memberList"></div></section>
+    <section class="section">
+      <h2>গ্রুপের নিয়মকানুন</h2>
+      <div class="rules">
+        <ul>
+          <li>কোনো গালি-গালাজ বা ব্যক্তিগত আক্রমণ চলবে না</li>
+          <li>মেম অবশ্যই অ্যাডমিন অ্যাপ্রুভ করতে হবে</li>
+          <li>ধর্ম-রাজনীতি নিয়ে ঝামেলা করা স্ট্রিক্টলি বারণ</li>
+          <li>স্প্যাম = ইনস্ট্যান্ট কিক</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <footer><p>&copy; 2025 আজাইরা পোলাপাইন | সব অধিকার সংরক্ষিত 😎</p></footer>
+
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
