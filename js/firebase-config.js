@@ -2,12 +2,12 @@
 // Firebase Console → Project Settings → Web App → Config কপি করবে
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "your-project.firebaseapp.com",
-  projectId: "your-project",
-  storageBucket: "your-project.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "1:123456789:web:abcdef123456"
+  apiKey: "AIzaSyDTEhcgeJCPzKUH13UbyhapNp5UlTmm2h0",
+  authDomain: "aajira-polapain-website.firebaseapp.com",
+  projectId: "aajira-polapain-website",
+  storageBucket: "aajira-polapain-website.firebasestorage.app",
+  messagingSenderId: "1064098820782",
+  appId: "1:1064098820782:web:cc28966b94b5b1c13ff33f",
 };
 
 firebase.initializeApp(firebaseConfig);
