@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - আজাইরা পোলাপাইন</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kalpurush&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-body">
+
+  <div id="loginScreen" class="login-screen">
+    <div class="login-box">
+      <h2>অ্যাডমিন লগইন</h2>
+      <input type="password" id="adminPass" placeholder="পাসওয়ার্ড দিন">
+      <button onclick="login()">লগইন</button>
+      <p id="error" style="color:red;display:none;">ভুল পাসওয়ার্ড!</p>
+    </div>
+  </div>
+
+  <div id="adminDashboard" style="display:none;" class="container">
+    <h1>অ্যাডমিন ড্যাশবোর্ড <button onclick="logout()" class="logout-btn">লগ আউট</button></h1>
+    <div class="form-section">
+      <h3>নতুন যোগ করুন</h3>
+      <select id="typeSelect">
+        <option value="members">মেম্বার</option>
+        <option value="admins">অ্যাডমিন</option>
+        <option value="monitors">মনিটর</option>
+      </select><br><br>
+      <input type="text" id="name" placeholder="নাম" required>
+      <input type="text" id="phone" placeholder="মোবাইল নম্বর" required>
+      <input type="text" id="photo" placeholder="ছবির URL (অপশনাল)">
+      <input type="text" id="responsibility" placeholder="দায়িত্ব (অপশনাল)">
+      <button onclick="addPerson()">যোগ করুন</button>
+    </div>
+
+    <h2>অ্যাডমিন লিস্ট</h2><div class="grid" id="adminListAdmin"></div>
+    <h2>মনিটর লিস্ট</h2><div class="grid" id="monitorListAdmin"></div>
+    <h2>মেম্বার লিস্ট</h2><div class="grid" id="memberListAdmin"></div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
